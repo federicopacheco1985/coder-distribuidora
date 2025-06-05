@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Bitter", serif;
+    margin: 0;
+}
+
+:root {
+    color: rgb(41, 31, 31);
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*!--------------------body-------------------------*/
+
+/*----------------barra de navegacion---------------*/
+
+
+
+header h1 {
+    color: rgb(229, 160, 132);
+    font-size: 35px;
+    text-align: start;
+    text-shadow: rgb(100, 76, 68) 8px 8px 8px;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+
+
+
+header {
+    background-color: rgb(41, 31, 31);
+}
+
+header nav ul li a {
+    color: rgb(229, 160, 132) !important;
+    font-size: 15px;
+}
+
+.navbar-toggler {
+    background-color: rgb(229, 160, 132);
+}
+
+
+.navbar-brand {
+    font-size: 35px;
+    text-align: start;
+    text-shadow: rgb(100, 76, 68) 8px 8px 8px;
+    color: rgb(229, 160, 132) !important;
+}
+
+.boton {
+    border: 2px solid rgb(229, 160, 132);
+    transition: 0.5s;
+}
+
+.boton:hover {
+    background-color: rgb(128, 103, 95);
+    border: 2px solid rgb(229, 160, 132);
+    color: rgb(229, 160, 132);
+
+
+}
+
+/*.----------------------contenido principal index--------------*/
+
+
+/*-------------------------hero---------------------------------*/
+
+.hero {
+    width: 100%;
+    height: 1200px;
+    text-align: center;
+    color: #000000;
+    background-image: url(../img/alm.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 25px;
+    position: sticky;
+}
+
+.content-hero p {
+    flex-wrap: wrap;
+    align-content: flex-end;
+    padding-top: 100px;
+    font-size: 30px;
+    text-align: start;
+    max-width: 980px;
+    margin-left: 5px;
+
+}
+
+.hero a {
+    padding: 20px;
+    background-color: rgb(100, 76, 68);
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: underline;
+    opacity: 90%;
+    margin-top: 70px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.hero a:hover {
+    color: rgb(229, 160, 132);
+    ;
+}
+
+.content-hero h2 {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+/*------------------------destacado-----------------------------*/
+.destacado {
+    background: linear-gradient(rgb(41, 31, 31), rgb(100, 76, 68), rgb(229, 160, 132), rgb(100, 76, 68), rgb(41, 31, 31));
+    height: 1300px
+}
+
+.destacado h2 {
+    text-align: center;
+    text-decoration: underline;
+
+    padding: 10px;
+    color: rgb(229, 160, 132);
+
+    font-family: Tahoma, sans-serif;
+}
+
+.destacado article {
+
+    text-align: center;
+    flex-wrap: wrap;
+    border: 4px solid rgb(229, 160, 132);
+    width: 308px;
+    height: 540px;
+    margin: 10px;
+    background: linear-gradient(rgb(41, 31, 31), rgb(100, 76, 68), rgb(229, 160, 132), rgb(100, 76, 68), rgb(41, 31, 31));
+
+}
+
+.destacado article h3 {
+    text-align: center;
+    color: rgb(2295, 160, 132);
+    background-color: rgb(100, 76, 68);
+    margin-bottom: 0;
+}
+
+.destacado p {
+    font-size: 12px;
+    text-align: center;
+    margin: 15px;
+    color: rgb(229, 160, 132);
+
+}
+
+.boton {
+
+    text-decoration: none;
+    color: rgb(229, 160, 132);
+    font-size: 15px;
+    padding: 8px;
+    background-color: rgb(100, 76, 68);
+
+
+}
+
+.destacado div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*---------seccion productos--------*/
+.productos1 {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    background-image: url(../img/trigo-mano.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 25px;
+    position: sticky;
+    color: #ffffff;
+
+}
+
+
+
+
+.productos1 h1 {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 80px;
+    text-align: center;
+
+}
+
+.productos1 p {
+    font-size: 30px;
+    text-align: right;
+    margin-block: 20px;
+    margin-inline: 10px;
+    max-width: 50%;
+
+}
+
+.parrafo {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    min-height: 600px;
+    align-items: center;
+
+}
+
+
+.productos1 .productos2 {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-block: 50px;
+}
+
+.productos1 .productos2 p {
+    width: 100%;
+    text-align: center;
+    max-width: none;
+    margin-inline: 0;
+    padding: 20px;
+
+}
+
+
+
+.productos1 .productos2 h2 {
+    text-align: center;
+    text-decoration-line: underline;
+    font-family: Tahoma, sans-serif;
+
+}
+
+.boton2 {
+
+    background-color: rgb(229, 160, 132);
+    color: #ffffff;
+    font-size: 25px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    margin: 20px auto;
+    text-decoration: none;
+
+
+}
+
+.grid-prod {
+    background-color: #000000;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px;
+    gap: 35px;
+    grid-auto-rows: 200px;
+}
+
+.grid-prod img {
+    width: 100%;
+    height: 100%;
+    border: 3px solid black;
+    margin: 15px 0 15px 15px;
+}
+
+.grid-prod h3 {
+    position: absolute;
+    top: 0;
+    padding-top: 5px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color: rgb(229, 160, 132);
+    text-shadow: rgb(0, 0, 0) 1px 2px 1px;
+}
+
+.prod {
+    position: relative;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+
+/*---------seccion nosotros--------*/
+.nosotros {
+
+    width: 100%;
+    height: 800px;
+    text-align: center;
+    background-image: url(../img/somos.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: sticky;
+
+}
+
+.nosotros h2 {
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    font-family: Tahoma, sans-serif;
+
+}
+
+.nosotros p {
+    padding-top: 70px;
+    font-size: 30px;
+    text-align: right;
+    margin-block: 20px;
+    margin-inline: 10px;
+    max-width: 50%;
+    color: #ffffff;
+
+
+}
+
+/*-------------seccion valores-------*/
+.ofrecemos {
+
+    font-family: Tahoma, sans-serif;
+    background-color: #DDD0C8;
+}
+
+.ofrecemos h2 {
+    text-align: center;
+    font-size: 70px;
+    color: rgb(229, 160, 132);
+    background-color: rgb(41, 31, 31);
+    font-family: Tahoma, sans-serif;
+    padding: 5px 0 10px 0;
+}
+
+.ofrecemos p {
+    color: rgb(41, 31, 31);
+    font-size: 30px;
+    text-align: start;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+.ofrecemos h3 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.descripcion ul {
+    color: rgb(41, 31, 31);
+    font-size: 25px;
+    text-align: start;
+}
+
+.descripcion ul li {
+    padding: 5px;
+
+
+}
+
+
+.valores ul {
+    color: rgb(41, 31, 31);
+    font-size: 25px;
+    text-align: start;
+    padding: 0%;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+.valores ul li {
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+
+
+/*-----------seccion logistica---------*/
+.logistica {
+
+    background-image: url(../img/envio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: sticky;
+    width: 100%;
+    height: 500px;
+
+
+
+}
+
+
+.logistica h2 {
+
+    font-size: 70px;
+    padding: 15px 0 25px 0;
+    text-align: center;
+    color: rgb(229, 160, 132);
+    font-family: Tahoma, sans-serif;
+    background-color: rgb(41, 31, 31)
+}
+
+.logistica p {
+    color: black;
+    text-shadow: 2px 2px 3px rgb(229, 160, 132);
+    font-size: 30px;
+    margin-block: 70px;
+    margin-inline: 10px;
+    max-width: 100%
+}
+
+
+/*------------seccion pedidos-----------*/
+.pedidos {
+    text-align: center;
+    background-image: url(../img/pedidos.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: sticky;
+    width: 100%;
+    height: 200%;
+
+}
+
+.pedidos h2 {
+    font-size: 70px;
+    padding-block: 15px;
+    padding-bottom: 25px;
+    text-align: center;
+    color: rgb(229, 160, 132);
+    font-family: Tahoma, sans-serif;
+    background-color: rgb(41, 31, 31)
+}
+
+.pedidos p {
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px rgb(41, 31, 31);
+    font-size: 30px;
+    margin-block: 0;
+    margin-inline: 10px;
+    max-width: 100%
+}
+
+.pedidos h3 {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.pedidos img {
+    height: 300px;
+    width: 350px;
+}
+
+/*-----------seccion recetas------------*/
+.recetas {
+    background-color: #DDD0C8;
+}
+
+.recetas h1 {
+    font-size: 70px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 0 !important;
+    background-color: #000000;
+    padding: 15px;
+    font-family: Tahoma, sans-serif;
+}
+
+
+
+.recetas h2 {
+    text-align: center;
+    color: rgb(229, 160, 132);
+
+    background-color: rgb(41, 31, 31);
+    padding: 15px;
+    font-family: Tahoma, sans-serif;
+}
+
+.recetas p {
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    padding: 25px;
+}
+
+.receta {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin: 20px;
+    margin-block: 0;
+}
+
+/*----------seccion contacto---------*/
+.contacto {
+
+    background-color: #DDD0C8;
+}
+
+.contacto h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 15px
+}
+
+.contacto p {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px
+}
+
+
+.form {
+    display: flex;
+    margin: 0 50px 0 50px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.mb-3 {
+    width: 30%;
+    margin: 10px;
+}
+
+.btn-contacto {
+    color: rgb(41, 31, 31);
+    margin: 10px;
+    border: 2px solid rgb(128, 103, 95);
+    transition: 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(229, 160, 132);
+}
+
+.btn-contacto:hover {
+    background-color: rgb(128, 103, 95);
+    border: 2px solid rgb(229, 160, 132);
+    color: rgb(229, 160, 132);
+
+
+}
+
+.contacto h2 {
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.contacto iframe {
+    padding: 10px;
+    margin: 10px;
+}
+
+.whatsfloat {
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+
+}
+
+.contacto iframe {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    border-radius: 20px;
+
+}
+
+
+/*!-------------------------footer----------------------------*/
+footer {
+    text-align: center;
+    color: rgb(229, 160, 132);
+    padding-block: 20px;
+
+    background-color: rgb(41, 31, 31);
+}
+
+footer div {
+    transition: transform 0.3s ease;
+}
+
+
+footer p {
+    font-size: 30px;
+}
