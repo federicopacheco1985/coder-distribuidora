@@ -16,7 +16,9 @@ body {
     box-sizing: border-box;
 }
 
-
+iframe {
+    max-width: 100%;
+}
 
 
 /*!--------------------body-------------------------*/
@@ -625,4 +627,39 @@ footer div {
 
 footer p {
     font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    .form {
+        flex-direction: column;
+    }
+
+    .mb-3 {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+
+    .contacto h1 {
+        font-size: 40px;
+
+    }
+
+    footer div a img{
+        height: 35px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
