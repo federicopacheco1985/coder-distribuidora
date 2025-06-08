@@ -21,6 +21,7 @@ iframe {
 }
 
 
+
 /*!--------------------body-------------------------*/
 
 /*----------------barra de navegacion---------------*/
@@ -258,7 +259,7 @@ header nav ul li a {
 
 .productos1 .productos2 h2 {
     text-align: center;
-    text-decoration-line: underline;
+
     font-family: Tahoma, sans-serif;
 
 }
@@ -277,12 +278,12 @@ header nav ul li a {
 }
 
 .grid-prod {
-    background-color: #000000;
+
     margin: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 400px 400px;
-    gap: 35px;
+    gap: 10px;
     grid-auto-rows: 200px;
 }
 
@@ -290,7 +291,7 @@ header nav ul li a {
     width: 100%;
     height: 100%;
     border: 3px solid black;
-    margin: 15px 0 15px 15px;
+    margin: auto;
 }
 
 .grid-prod h3 {
@@ -307,7 +308,7 @@ header nav ul li a {
 .prod {
     position: relative;
     font-size: 20px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -627,9 +628,189 @@ footer div {
 
 footer p {
     font-size: 30px;
+
+
 }
 
+/*!--------@media-------*/
+
+
 @media (max-width: 600px) {
+
+
+    /*!--------index-------*/
+    .hero {
+        height: 700px;
+    }
+
+
+    .hero h2 {
+        font-size: 30px;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 15px;
+        padding-top: 25px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .destacado {
+        height: 100%;
+    }
+
+    .destacado div {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        justify-items: center;
+
+    }
+
+    .hero a {
+        padding: 10px;
+        background-color: rgb(100, 76, 68);
+        border-radius: 50px;
+        color: #ffffff;
+        font-size: 10px;
+        text-decoration: underline;
+        opacity: 90%;
+        margin-top: 70px;
+        display: inline-block;
+        width: fit-content;
+        margin-top: 10px;
+    }
+
+
+    /*!--------Productos-------*/
+    .productos1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .productos1 h1 {
+        font-size: 30px;
+        padding-top: 75px;
+    }
+
+    .parrafo p {
+        font-size: 15px;
+
+    }
+
+    .grid-prod {
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 200px 200px;
+        gap: 30px;
+        grid-auto-rows: 200px;
+
+    }
+
+    .prod {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 500px;
+    }
+
+    .prod h3 {
+        font-size: 25px;
+    }
+
+    .productos2 p {
+        font-size: 15px;
+    }
+
+    /*!--------nosotros-------*/
+    .nosotros h2 {
+        font-size: 30px;
+        padding-top: 25px;
+    }
+
+    .nosotros p {
+        font-size: 15px;
+        padding-top: 15px;
+    }
+
+    .ofrecemos h2 {
+
+        font-size: 30px;
+    }
+
+    .ofrecemos p {
+        font-size: 15px;
+    }
+
+    .descripcion ul {
+        font-size: 15px;
+    }
+
+    .valores ul{
+        font-size: 15px;
+    }
+    .logistica h2{
+        font-size: 30px;
+        padding: 5px 0 10px;
+    }
+
+    .logistica p {
+        font-size: 15px;
+    }
+    .pedidos h2{
+
+    font-size: 30px;
+    }
+    .pedidos p {
+        font-size: 15px;
+    }
+    .pedidos h3{
+        font-size: 25px;
+    }
+
+        /*!--------recetas-------*/
+
+.recetas h1{
+    font-size: 25px;
+}
+.recetas p {
+    font-size: 15px;
+}
+
+.receta {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+}
+
+.receta h2{
+    font-size: 25px;
+    }
+.receta h3{
+    font-size: 20px;
+}
+.receta ul {
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
     .form {
         flex-direction: column;
     }
@@ -647,7 +828,7 @@ footer p {
 
     }
 
-    footer div a img{
+    footer div a img {
         height: 35px;
     }
 
