@@ -1,0 +1,128 @@
+@mixin productos {
+    width: 100%;
+    text-align: center;
+    padding-block: 50px;
+
+    p {
+        width: 100%;
+        text-align: center;
+        max-width: none;
+        margin-inline: 0;
+        padding: 20px;
+
+    }
+
+    p {
+        width: 100%;
+        text-align: center;
+        max-width: none;
+        margin-inline: 0;
+        padding: 20px;
+
+    }
+}
+
+
+
+
+
+.productos1 {
+    @include productos;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    background-image: url(../img/trigo-mano.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 25px;
+    position: sticky;
+    color: $color-blanco;
+
+    h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 80px;
+        text-align: center;
+
+
+    }
+
+    .parrafo {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+        min-height: 600px;
+        align-items: center;
+
+
+        p {
+            font-size: 30px;
+            text-align: right;
+            margin-block: 20px;
+            margin-inline: 10px;
+            max-width: 50%;
+
+        }
+    }
+
+}
+
+.grid-prod {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px;
+    gap: 10px;
+    grid-auto-rows: 200px;
+
+    .prod {
+        position: relative;
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border: 3px solid $color-oscuro;
+            margin: auto;
+        }
+
+        h3 {
+            position: absolute;
+            top: 0;
+            padding-top: 5px;
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 50px;
+            color: $color-principal;
+            text-shadow: $color-oscuro 1px 2px 1px;
+        }
+    }
+
+}
+
+.productos2 {
+    p {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 40px
+    }
+
+    @include productos;
+
+    .boton2 {
+
+        background-color: $color-principal;
+        color: $color-blanco;
+        font-size: 20px;
+        padding: 8px 16px;
+        border-radius: 10px;
+        margin: 20px auto;
+        text-decoration: none;
+
+
+    }
+}

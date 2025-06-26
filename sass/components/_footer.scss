@@ -1,0 +1,24 @@
+footer {
+    text-align: center;
+    color: $color-blanco;
+    padding-block: 20px;
+
+    background-color: $color-terciario;
+    ;
+
+    div {
+        transition: transform 0.3s ease;
+
+        a {
+            img {
+                height: 30px;
+            }
+        }
+    }
+}
+
+p {
+    font-size: 30px;
+
+
+}

@@ -5,9 +5,7 @@ body {
     margin: 0;
 }
 
-:root {
-    color: rgb(41, 31, 31);
-}
+
 
 * {
 
@@ -56,12 +54,7 @@ header nav ul li a {
 }
 
 
-.navbar-brand {
-    font-size: 35px;
-    text-align: start;
-    text-shadow: rgb(100, 76, 68) 8px 8px 8px;
-    color: rgb(229, 160, 132) !important;
-}
+
 
 .boton {
     border: 2px solid rgb(229, 160, 132);
@@ -120,7 +113,7 @@ header nav ul li a {
 
 .hero a:hover {
     color: rgb(229, 160, 132);
-    ;
+
 }
 
 .content-hero h2 {
@@ -159,6 +152,11 @@ header nav ul li a {
 
 }
 
+.destacado img {
+    width: 300px;
+    height: 400px;
+}
+
 .destacado article h3 {
     text-align: center;
     color: rgb(2295, 160, 132);
@@ -177,7 +175,7 @@ header nav ul li a {
 .boton {
 
     text-decoration: none;
-    color: rgb(229, 160, 132);
+    color: white;
     font-size: 15px;
     padding: 8px;
     background-color: rgb(100, 76, 68);
@@ -320,7 +318,7 @@ header nav ul li a {
 .nosotros {
 
     width: 100%;
-   min-height: 500px;
+    min-height: 500px;
     text-align: center;
     background-image: url(../img/somos.jpg);
     background-position: center;
@@ -404,6 +402,7 @@ header nav ul li a {
 .valores ul li {
     text-decoration: none;
     padding: 5px;
+
 }
 
 
@@ -483,10 +482,7 @@ header nav ul li a {
     color: #ffffff;
 }
 
-.pedidos img {
-    height: 300px;
-    width: 350px;
-}
+
 
 /*-----------seccion recetas------------*/
 .recetas {
@@ -614,7 +610,7 @@ header nav ul li a {
 /*!-------------------------footer----------------------------*/
 footer {
     text-align: center;
-    color: rgb(229, 160, 132);
+    color: white;
     padding-block: 20px;
 
     background-color: rgb(41, 31, 31);
@@ -636,12 +632,10 @@ footer p {
 
 @media (max-width: 600px) {
 
-
     /*!--------index-------*/
     .hero {
         height: 700px;
     }
-
 
     .hero h2 {
         font-size: 30px;
@@ -665,7 +659,6 @@ footer p {
         grid-template-columns: 1fr;
         gap: 1rem;
         justify-items: center;
-
     }
 
     .hero a {
@@ -682,7 +675,6 @@ footer p {
         margin-top: 10px;
     }
 
-
     /*!--------Productos-------*/
     .productos1 {
         display: grid;
@@ -697,7 +689,6 @@ footer p {
 
     .parrafo p {
         font-size: 15px;
-
     }
 
     .grid-prod {
@@ -707,7 +698,6 @@ footer p {
         grid-template-rows: 200px 200px;
         gap: 30px;
         grid-auto-rows: 200px;
-
     }
 
     .prod {
@@ -728,11 +718,10 @@ footer p {
     }
 
     /*!--------nosotros-------*/
-.nosotros{
-    background-position: right;
-    height: 400px;
-    
-}
+    .nosotros {
+        background-position: right;
+        height: 400px;
+    }
 
     .nosotros h2 {
         font-size: 30px;
@@ -746,7 +735,6 @@ footer p {
     }
 
     .ofrecemos h2 {
-
         font-size: 30px;
     }
 
@@ -758,10 +746,11 @@ footer p {
         font-size: 15px;
     }
 
-    .valores ul{
+    .valores ul {
         font-size: 15px;
     }
-    .logistica h2{
+
+    .logistica h2 {
         font-size: 30px;
         padding: 5px 0 10px;
     }
@@ -769,45 +758,49 @@ footer p {
     .logistica p {
         font-size: 15px;
     }
-    .pedidos h2{
 
-    font-size: 30px;
+    .pedidos h2 {
+        font-size: 30px;
     }
+
     .pedidos p {
         font-size: 15px;
     }
-    .pedidos h3{
+
+    .pedidos h3 {
         font-size: 25px;
     }
 
-        /*!--------recetas-------*/
+    /*!--------recetas-------*/
+    .recetas h1 {
+        font-size: 25px;
+    }
 
-.recetas h1{
-    font-size: 25px;
-}
-.recetas p {
-    font-size: 15px;
-}
+    .recetas p {
+        font-size: 15px;
+    }
 
-.receta {
-    display: flex;
+    .receta {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-}
-
-.receta h2{
-    font-size: 25px;
     }
-.receta h3{
-    font-size: 20px;
-}
-.receta ul {
-    font-size: 15px;
-}
-        /*!--------footer-------*/
 
+    .receta h2 {
+        font-size: 25px;
+    }
+
+    .receta h3 {
+        font-size: 20px;
+    }
+
+    .receta ul {
+        font-size: 15px;
+    }
+
+    /*!--------footer-------*/
     .form {
         flex-direction: column;
     }
@@ -822,22 +815,9 @@ footer p {
 
     .contacto h1 {
         font-size: 40px;
-
     }
 
     footer div a img {
         height: 35px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
 }

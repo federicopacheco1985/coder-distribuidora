@@ -1,0 +1,46 @@
+.recetas {
+    background-color: $color-fondo-claro;
+
+    h1 {
+        font-size: 70px;
+        text-align: center;
+        color: $color-blanco;
+        margin-bottom: 0 !important;
+        background-color: $color-oscuro;
+        padding: 15px;
+        font-family: Tahoma, sans-serif;
+    }
+
+    p {
+        font-size: 25px;
+        color: $color-oscuro;
+        text-align: center;
+        padding: 25px;
+    }
+}
+
+.receta {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin: 20px;
+    margin-block: 0;
+
+
+
+    div {
+
+
+        h2 {
+            text-align: center;
+            color: $color-principal;
+
+            background-color: $color-terciario;
+            padding: 15px;
+            font-family: Tahoma, sans-serif;
+        }
+
+
+    }
+
+}

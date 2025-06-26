@@ -1,0 +1,7 @@
+$color-principal:rgb(229, 160, 132);
+$color-secundario:rgb(100, 76, 68);
+$color-terciario: rgb(41, 31, 31);
+$color-oscuro:#000000;
+$color-blanco:#ffffff;
+$color-fondo-claro:#DDD0C8;
+$color-gradiente:linear-gradient($color-terciario, $color-secundario, $color-principal, $color-secundario, $color-terciario);

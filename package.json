@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-git",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/federicopacheco1985/coder-distribuidora.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/federicopacheco1985/coder-distribuidora/issues"
+  },
+  "homepage": "https://github.com/federicopacheco1985/coder-distribuidora#readme",
+  "description": ""
+}
