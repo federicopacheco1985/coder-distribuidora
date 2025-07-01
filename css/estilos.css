@@ -598,6 +598,9 @@ header nav ul li a {
 }
 
 .contacto iframe {
+    display: block;
+    border: 0;
+    max-width: 100%;
     display: flex;
     text-align: center;
     align-content: center;
