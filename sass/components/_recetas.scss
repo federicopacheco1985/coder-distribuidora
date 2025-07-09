@@ -2,17 +2,13 @@
     background-color: $color-fondo-claro;
 
     h1 {
-        font-size: 70px;
         text-align: center;
-        color: $color-blanco;
+        color: $color-terciario;
         margin-bottom: 0 !important;
-        background-color: $color-oscuro;
         padding: 15px;
-        font-family: Tahoma, sans-serif;
     }
 
     p {
-        font-size: 25px;
         color: $color-oscuro;
         text-align: center;
         padding: 25px;
@@ -37,7 +33,6 @@
 
             background-color: $color-terciario;
             padding: 15px;
-            font-family: Tahoma, sans-serif;
         }
 
 

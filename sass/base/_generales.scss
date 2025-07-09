@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
-    font-family: "Bitter", serif;
-    margin: 0;
-    height: 100%;
-}
-
 * {
 
     margin: 0;
@@ -13,6 +7,45 @@ body {
     box-sizing: border-box;
 
 }
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: "Bitter", serif;
+    margin: 0;
+    height: 100%;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Tahoma, sans-serif;
+    text-transform: capitalize;
+
+}
+
+h1 {
+    font-size: 2rem;
+
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
 
 iframe {
     max-width: 100%;
