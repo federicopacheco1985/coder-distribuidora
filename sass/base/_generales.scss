@@ -11,7 +11,9 @@
 html {
     font-size: 20px;
 }
-
+img , input, textarea{
+    max-width: 100%!important;
+}
 body {
     font-family: "Bitter", serif;
     margin: 0;

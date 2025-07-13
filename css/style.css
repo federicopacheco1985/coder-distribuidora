@@ -9,6 +9,10 @@ html {
   font-size: 20px;
 }
 
+img, input, textarea {
+  max-width: 100% !important;
+}
+
 body {
   font-family: "Bitter", serif;
   margin: 0;
@@ -55,6 +59,10 @@ header h1 {
   font-size: 2rem;
   text-align: start;
   text-shadow: rgb(100, 76, 68) 8px 8px 8px;
+}
+header h1 img {
+  height: auto;
+  width: 400px;
 }
 header .nav-link {
   color: rgb(229, 160, 132) !important;
@@ -169,7 +177,7 @@ header .boton:hover {
 .hero .content-hero a.button {
   display: flex;
   position: relative;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   font-size: 0.6rem;
   font-weight: 600;
   color: #ffffff;
@@ -179,10 +187,11 @@ header .boton:hover {
   cursor: pointer;
   overflow: hidden;
   transition: all 0.3s ease;
-  width: 160px;
+  width: 115px;
   text-align: center;
   margin: auto;
   background-color: rgb(100, 76, 68);
+  margin: auto;
 }
 .hero .content-hero a:hover {
   box-shadow: 0px 8px 16px rgb(229, 160, 132);
@@ -306,9 +315,9 @@ footer div a img {
 }
 .nosotros p {
   padding-top: 100px;
-  text-align: right;
+  text-align: start;
   margin-block: 25px;
-  margin-inline: 10px;
+  margin-inline: 25px;
   max-width: 50%;
   color: #ffffff;
 }
@@ -345,6 +354,7 @@ footer div a img {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 8px;
+  grid-auto-rows: 250px;
 }
 .valores .area1 {
   grid-column: span 5/span 5;
@@ -406,13 +416,87 @@ footer div a img {
   padding: 15px;
 }
 
+.beneficios {
+  background-color: #DDD0C8;
+}
+
+.title h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 30px;
+  margin: 0 0 0 20px;
+}
+
+.card-beneficios {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10px;
+  max-width: auto;
+  padding-top: 30px;
+  font-size: 10px;
+  grid-auto-rows: 250px;
+  background-color: #DDD0C8;
+  margin: 0 20px 0 20px;
+  text-align: center;
+}
+.card-beneficios img {
+  width: 100px;
+  height: 100px;
+  margin: 1rem, auto;
+}
+.card-beneficios .envios {
+  background-color: #fcf1ea;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid rgb(41, 31, 31);
+}
+.card-beneficios .envios p {
+  font-size: 0.7rem;
+  padding-top: 1rem;
+}
+.card-beneficios .retiro {
+  background-color: #fcf1ea;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid rgb(41, 31, 31);
+}
+.card-beneficios .retiro p {
+  font-size: 0.7rem;
+  padding-top: 1rem;
+}
+.card-beneficios .pagos {
+  background-color: #fcf1ea;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid rgb(41, 31, 31);
+}
+.card-beneficios .pagos p {
+  font-size: 0.7rem;
+  padding-top: 1rem;
+}
+.card-beneficios .call {
+  background-color: #fcf1ea;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid rgb(41, 31, 31);
+}
+.card-beneficios .call p {
+  font-size: 0.7rem;
+  padding-top: 1rem;
+}
+
 .contacto {
   background-color: #DDD0C8;
 }
 .contacto h1 {
   color: #000000;
   text-align: center;
-  padding: 15px;
+  padding: 30px;
 }
 .contacto p {
   text-align: center;
@@ -421,18 +505,18 @@ footer div a img {
 
 .form {
   display: flex;
-  margin: 0 50px 0 50px;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
 }
-
-.mb-3 {
+.form .mb-3 {
   width: 30%;
-  margin: 10px;
+  margin: 10px 0;
+  padding: 10px;
 }
-
-.form-control2 {
+.form .form-control2 {
   width: 100%;
   height: 200px;
   padding: 10px;
@@ -440,8 +524,7 @@ footer div a img {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
-
-.btn-contacto {
+.form .btn-contacto {
   color: rgb(41, 31, 31);
   margin: 10px;
   border: 2px solid rgb(100, 76, 68);
@@ -450,17 +533,17 @@ footer div a img {
   border-radius: 5px;
   background-color: rgb(229, 160, 132);
 }
-.btn-contacto:hover {
+.form .btn-contacto:hover {
   background-color: rgb(100, 76, 68);
   border: 2px solid rgb(229, 160, 132);
   color: rgb(229, 160, 132);
 }
-.btn-contacto h2 {
+.form .btn-contacto h2 {
   padding: 10px;
   margin: 10px;
   text-align: center;
 }
-.btn-contacto iframe {
+.form .btn-contacto iframe {
   max-width: 100%;
   display: flex;
   text-align: center;
@@ -556,6 +639,10 @@ footer div a img {
     font-size: 25px;
   }
   /*!--------nosotros-------*/
+  .valores .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
   .nosotros {
     background-position: right;
     height: 400px;
@@ -621,6 +708,18 @@ footer div a img {
     font-size: 15px;
   }
   /*!--------contacto-------*/
+  .card-beneficios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    max-width: auto;
+    padding-top: 30px;
+    font-size: 10px;
+    grid-auto-rows: 250px;
+    background-color: #DDD0C8;
+    margin: 0 20px 0 20px;
+  }
   .contacto h1 {
     font-size: 40px;
   }
@@ -629,6 +728,7 @@ footer div a img {
   }
   .contacto .form {
     flex-direction: column;
+    max-width: 100%;
   }
   .contacto .mb-3 {
     width: 100%;
@@ -648,6 +748,37 @@ footer div a img {
   }
   p {
     font-size: 20px;
+  }
+}
+@media (max-width: 745px) and (max-width: 550px) {
+  .hero {
+    height: 600px;
+  }
+  .hero h1 a {
+    width: 30px;
+    height: 30px;
+  }
+  .hero .content-hero h2 {
+    font-size: 1rem;
+  }
+  .hero .content-hero p {
+    text-align: start;
+  }
+  .hero .content-hero .hero a {
+    padding: 10px;
+    background-color: rgb(100, 76, 68);
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 5px;
+    text-decoration: underline;
+    opacity: 90%;
+    margin-top: 150px;
+    display: inline-block;
+    width: fit-content;
+    margin-top: 10px;
+  }
+  .destacado h2 {
+    font-size: 1rem;
   }
 }
 

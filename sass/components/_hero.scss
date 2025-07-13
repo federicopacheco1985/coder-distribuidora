@@ -10,6 +10,7 @@
     font-size: 1.5rem;
     position: sticky;
 
+
     .content-hero {
 
 
@@ -37,7 +38,7 @@
         a.button {
             display: flex;
             position: relative;
-            padding: 1rem 2rem;
+            padding: 0.5rem 1rem;
             font-size: 0.6rem;
             font-weight: 600;
             color: $color-blanco;
@@ -47,10 +48,11 @@
             cursor: pointer;
             overflow: hidden;
             transition: all 0.3s ease;
-            width: 160px;
+            width: 115px;
             text-align: center;
             margin: auto;
             background-color: $color-secundario;
+            margin: auto;
 
 
         }
@@ -60,4 +62,15 @@
 
         }
     }
+
+
+
+
+
+
+
+
+
+
+
 }
